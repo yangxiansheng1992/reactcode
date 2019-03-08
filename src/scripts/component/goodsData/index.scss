@@ -1,0 +1,82 @@
+$h:100%;
+$w:100%;
+
+.tuijian{
+    width: $w;
+    height: 40px;;
+    text-align: center;
+    line-height: 40px;
+    background-color: cornsilk;
+
+}
+.goods-detail{
+    width: $w;
+    .goods-box{
+        width: $w;
+        height: 500px;
+        .goods-name{
+            wdith:$w;
+            height: .2*$h;
+            position: relative; 
+            line-height: 20px; 
+            max-height: 40px;
+            overflow: hidden;
+            text-indent: 2em;
+        }
+        .goods-name::after{
+            content: "..."; 
+            position: absolute; 
+            bottombottom: 0; 
+            rightright: 0;
+             padding-left: 40px;    
+            background: -webkit-linear-gradient(left, transparent, #fff 55%);    
+            background: -o-linear-gradient(rightright, transparent, #fff 55%);    
+            background: -moz-linear-gradient(rightright, transparent, #fff 55%);    
+            background: linear-gradient(to rightright, transparent, #fff 55%);    
+            }
+        .goods-price{
+            width: $w;
+            height: .2*$h;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .goods-left{
+                width:.3*$w;
+                height: $h;
+            }
+            .goods-middle{
+                width:.3*$w;
+                height: $h;
+            }
+            .goods-discount{
+                width:.3*$w;
+                height: $h;
+            }
+        }
+        .detail{
+            width: $w;
+            height: .5*$h;
+            text-indent: 2em;
+        }
+        .goods-type{
+            width: $w;
+            height: .1*$h;
+        }
+    }
+    .btn{
+        width: $w;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .btn-left,.btn-right,.btn-center{
+            width:.333*$w;
+        }
+    }
+}
+.corner-badge{
+    height: 50px;
+  width: 200px;
+}
+
+
+

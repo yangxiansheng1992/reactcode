@@ -1,0 +1,125 @@
+
+$w:100%;
+$h:100%;
+$top-h:60px;
+.shop-car{
+    width: $w;
+    text-align: center;
+    .shop-head{
+        width: $w;
+        height: $top-h;
+        background-color: azure;
+        ul{
+            width:$w;
+            height: $h;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            li{
+                width: .33333*$w;
+                height: 60px;   
+            }
+        }
+    }
+    .shop-main{
+        width: $w;
+        ul{
+            width:$w;
+            display: flex;
+            flex-direction: row;
+            li{
+                height: 200px;
+            }
+            li:nth-child(1){
+                width: .1*$w;
+            }
+            li:nth-child(2){
+                width: .4*$w;
+                img{
+                    width: .8*$w;
+                    margin-left:.1*$w;
+                    height: .8*$h;
+                    margin-top: .1*$h; 
+                }
+            }
+            li:nth-child(3){
+                width: .5*$w;
+                .shop-name{
+                    width: $w;
+                    height: .6*$h;
+                    text-indent: 2em;
+                }
+                .shop-info{
+                    width: $w;
+                    height: .4*$h;
+                    overflow: hidden;
+                    .info-left{
+                        float: left;
+                        width: .4*$w;
+                        height: $h;
+                        span{
+                            display: block;
+                            width: $w;
+                            height: .5*$h;
+                        }
+                    }
+                    .info-right{
+                        float: left;
+                        width: .6*$w;
+                        height: $h;
+                        .right-left{
+                            float: left;
+                            width: .3*$w;
+                            height: .5*$h;
+                            padding:0.2*$h 0; 
+                            background-color:aquamarine;
+                        }
+                        .right-center{
+                            float: left;
+                            width: .4*$w;
+                            height: .5*$h;
+                            padding:0.2*$h 0; 
+                            background-color: antiquewhite;
+                        }
+                        .right-right{
+                            float: left;
+                            width: .3*$w;
+                            height: .5*$h;
+                            padding:0.2*$h 0; 
+                            background-color:aquamarine;
+                        }
+                        li:hover{
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .shop-foot{
+        width: $w;
+        height: $top-h;
+        background-color: gainsboro;
+        ul{
+            width:$w;
+            height: $h;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            li{
+                width: .33333*$w;
+                height: 60px;  
+                span{
+                    display: inline-block;
+                    width: .5*$w;
+                    height: $h;
+                } 
+                button{
+                    display: block;
+                    width: $w;
+                    height:$h;
+                }
+            }
+        }
+    }
+}

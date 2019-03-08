@@ -1,0 +1,48 @@
+
+
+@import "./common/swiper-3.3.1.min.css";
+@import "./common/antd-mobile.css";
+@import "./common/animate.min.css";
+@import "./common/mobile";
+@import "../assets/font-foot/iconfont.css";
+@import "../assets/classify/iconfont.css";
+@import "../assets/user-font/iconfont.css";
+
+$base_color: WhiteSmoke;
+
+html,body,#app ,.box{
+    width: 100%;
+    height: 100%;
+    background: $base_color;    
+}
+@keyframes moveIn{
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.enter{
+    animation: moveIn .8s;
+}
+
+@keyframes moveOut{
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.leave{
+    animation: moveOut .4s 0s linear both;
+}

@@ -1,0 +1,56 @@
+
+$w:100%;
+$h:100%;
+.show-name{
+    width: $w;
+    height: $h;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    .img-box{
+        width: .3*$w;
+        height: 160px;
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+            width: $w;
+            height: $h;
+        }
+    }
+    .user-name{
+        width:.7*$w;
+        height: $h;
+        text-align: center;
+        line-height: 160px;
+        font-size: 50px; 
+    }
+}
+.user-icon{
+    width: $w;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .icons{
+        width: .24*$w;
+        height: $h;
+        overflow: hidden;
+        background-color: #fff;
+        border-radius: 10px;
+        i{
+            width: $w;
+            height:.5*$h;
+            float: left;
+            text-align: center;
+            font-size: 60px;
+        }
+        span{
+            width: $w;
+            height: .5*$h;
+            float: left;
+            text-align: center;
+            line-height: 50px;
+        }
+    }
+}

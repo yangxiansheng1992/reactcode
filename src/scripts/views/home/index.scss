@@ -1,0 +1,26 @@
+
+$w:100%;
+$h:100%;
+
+$color:#fd4664;
+
+banner{
+    width: $w;
+    display: block;
+    height: 0.3*$h;
+}
+.classify{
+    width: $w;
+    height:100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    .classNav{
+        width: 0.3333*$w;
+        height: $h;
+        line-height: 100px;
+    }
+
+}
+

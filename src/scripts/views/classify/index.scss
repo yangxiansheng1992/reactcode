@@ -1,0 +1,196 @@
+
+$h:100%;
+$w:100%;
+
+.classify-head{
+    width: $w;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .head-left{
+        flex: 1;
+        background-color: #efeff4;
+        i{
+            width: $w;
+            height: $h;
+            display: inline-block;
+            font-size: 60px;
+            text-align: center;
+            color: #9BCD9B;
+        }
+    }
+    .head-right{
+        width: 0.85*$w;
+    }
+}
+
+.classClothes{
+    width:$w;
+    height: 0.24*$h;
+    ul{
+        widthi:$w;
+        height: $h;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        li{
+            width: 0.2*$w;
+            height: $h;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 10px 10px 5px #888888;
+            div{
+                width: $w;
+                height: $h;
+                img{
+                    width: 0.8*$w;
+                    height: $h;
+                    text-align: center;
+                    margin-left: 0.1*$w;
+                }
+            }
+            p{
+                width: $w;
+                height: 0.4*$h;
+                position: absolute;
+                text-align: center;
+                left: 0;
+                bottom: 0;
+                color: #fff;
+            }
+
+        }
+        li:nth-child(2n){
+            background-color: antiquewhite
+        }
+        li:nth-child(2n+1){
+            background-color: darkgray
+        }
+    }
+}
+.classIconfont{
+    width: $w;
+    height: 0.5*$h;
+    ul{
+        width: $w;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        flex-wrap: wrap;    
+        li{
+            width: 0.2*$w;
+            height: 100px;
+            background-color: #fff;
+            text-align: center;
+            overflow: hidden;
+            margin-left: 0.02*$w;
+            margin-top: 0.02*$h;
+            border-radius: 10px;
+            transition: 1s;
+            i{
+                font-size: 60px;
+                width: $w;
+                height: 0.7*$h;
+                float: left;
+            }
+            span{
+             float: left;
+                width: $w;
+                height: 0.3*$h;
+                color: black;
+            }
+        }
+        li:hover {
+            margin-left: 0;
+            font-size:35px; 
+        }
+       li:nth-child(5n){
+           color: #EEEE00;
+       }
+       li:nth-child(5n+1){
+           color:#C1FFC1;
+       }
+       li:nth-child(5n+2){
+           color:#B2DFEE;
+       }
+       li:nth-child(5n+3){
+           color: #00FFFF;
+       }
+       
+    }
+}
+.goods-list{
+
+
+    ul{
+        width: $w;
+        height: $h;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        li{
+            width: .3*$w;
+            height: 220px;
+            margin-left: .015*$w;
+            margin-top:20px; 
+            a{
+                width: $w;
+                height: $h;
+                .img-box{
+                    width: $w;
+                    height: .7*$h;
+                   border-radius:10px;
+                   overflow: hidden;
+                    img{
+                        width: $w;
+                        height: $h;
+                    }
+                }
+                h3{
+                    width: $w;
+                    height:.3*$h;
+                    overflow: hidden;
+                    .name{
+                        width: $w;
+                        height:.6*$h;
+                        font-size: 10px;
+                        position: relative; 
+                        line-height: 20px; 
+                        max-height: 40px;
+                        overflow: hidden;
+                        text-indent: 2em;
+                        color: #388E8E;
+                    }
+                    .name::after{
+                        content: "..."; 
+                        position: absolute; 
+                        bottombottom: 0; 
+                        rightright: 0;
+                         padding-left: 40px;    
+                        background: -webkit-linear-gradient(left, transparent, #fff 55%);    
+                        background: -o-linear-gradient(rightright, transparent, #fff 55%);    
+                        background: -moz-linear-gradient(rightright, transparent, #fff 55%);    
+                        background: linear-gradient(to rightright, transparent, #fff 55%);    
+                        }
+                    .price{
+                        width: $w;
+                        height: .4*$h;
+                        overflow: hidden;
+                        .price-left{
+                            width: .4*$w;
+                            height: $h;
+                            float: left;
+                        }
+                        .price-right{
+                            width: .6*$w;
+                            height: $h;
+                            float: left;
+                        }
+                    }
+                }
+            }
+        }   
+    }
+}
